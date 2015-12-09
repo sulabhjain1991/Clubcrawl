@@ -26,7 +26,9 @@ public class APP extends Application
 		return this.editor;
 	}
 
+
 	//convert date object into calendar object...
+
 	private Calendar getDate(Date date)
 	{
 		Calendar calendar = Calendar.getInstance();
