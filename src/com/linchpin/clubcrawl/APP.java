@@ -26,6 +26,7 @@ public class APP extends Application
 		return this.editor;
 	}
 
+	//get Calendar from date
 	private Calendar getDate(Date date)
 	{
 		Calendar calendar = Calendar.getInstance();
