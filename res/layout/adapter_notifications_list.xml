@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.linchpin.clubcrawl.helper.ImageViewRounded
+            android:id="@+id/ivFriendImage"
+            style="@style/CircularImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/tvDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_toLeftOf="@+id/rlLiked"
+            android:layout_toRightOf="@+id/ivFriendImage"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tvFriendName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Ankit Awasthi"
+                    android:textColor="@color/background_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/tvFriendName"
+                    android:paddingLeft="10dp"
+                    android:text="liked your blog picture"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvNotificationDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="June 17, 2014"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLiked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/ivdeleteNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/delete_notification"
+                android:visibility="gone" />
+
+         
+            <com.linchpin.clubcrawl.helper.ImageViewRounded
+                android:id="@+id/ivlikedPhoto"
+                style="@style/LeftNevigationRow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/no_img_jst_yet" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvDetails"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="10dp"
+            android:visibility="visible" >
+
+            <com.linchpin.clubcrawl.helper.ImageViewRounded
+                android:id="@+id/ivStatusImage"
+                style="@style/LeftNevigationRow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/no_img_jst_yet" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivStatusImage"
+                android:background="@drawable/following_btn_shape"
+                android:maxWidth="200dp"
+                android:minWidth="60dp"
+           
+                android:padding="10dp"
+                android:text="sfdsdsdsds"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/ivFriendImage"
+            android:background="@color/text_area_fg" />
+    </RelativeLayout>
+
+</LinearLayout> <!-- <?xml version="1.0" encoding="utf-8"?> -->
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="match_parent" -->
+<!-- android:layout_margin="5dp" -->
+<!-- android:background="@color/white" -->
+<!-- android:orientation="vertical" > -->
+
+
+<!-- <RelativeLayout -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:orientation="horizontal" > -->
+
+
+<!-- <com.linchpin.clubcrawl.helper.ImageViewRounded -->
+<!-- android:id="@+id/ivFriendImage" -->
+<!-- style="@style/CircularImage" -->
+<!-- android:layout_width="50dp" -->
+<!-- android:layout_height="50dp" -->
+<!-- android:layout_alignParentLeft="true" -->
+<!-- android:layout_margin="10dp" -->
+<!-- android:src="@drawable/no_img_jst_yet" /> -->
+
+
+<!-- <LinearLayout -->
+<!-- android:id="@+id/tvDetails" -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_centerVertical="true" -->
+<!-- android:layout_marginLeft="5sp" -->
+<!-- android:layout_toLeftOf="@+id/rlLiked" -->
+<!-- android:layout_toRightOf="@+id/ivFriendImage" -->
+<!-- android:orientation="vertical" > -->
+
+
+<!-- <RelativeLayout -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_marginTop="10dp" -->
+
+
+<!-- > -->
+
+
+<!-- <TextView -->
+<!-- android:id="@+id/tvFriendName" -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_alignParentTop="true" -->
+<!-- android:text="Ankit Awasthi" -->
+<!-- android:textColor="@color/background_color" -->
+<!-- android:textSize="12sp" /> -->
+
+
+<!-- <TextView -->
+<!-- android:id="@+id/tvMsg" -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_alignParentTop="true" -->
+<!-- android:layout_toRightOf="@+id/tvFriendName" -->
+<!-- android:paddingLeft="10dp" -->
+<!-- android:text="liked your blog picture" -->
+<!-- android:textColor="@color/black" -->
+<!-- android:textSize="12sp" /> -->
+<!-- </RelativeLayout> -->
+
+
+<!-- <TextView -->
+<!-- android:id="@+id/tvNotificationDate" -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:text="June 17, 2014" -->
+<!-- android:textColor="@color/black" -->
+<!-- android:textSize="12sp" /> -->
+<!-- </LinearLayout> -->
+
+
+<!-- <RelativeLayout -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:id="@+id/rlLiked" -->
+<!-- android:layout_alignParentRight="true" > -->
+
+
+<!-- <ImageView -->
+<!-- android:id="@+id/ivdeleteNotification" -->
+<!-- android:layout_width="wrap_content" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_gravity="right" -->
+<!-- android:layout_marginRight="5dp" -->
+<!-- android:layout_marginTop="5dp" -->
+<!-- android:src="@drawable/delete_notification" -->
+<!-- android:visibility="gone" /> -->
+
+
+<!-- <ImageView -->
+<!-- android:id="@+id/ivlikedPhoto" -->
+<!-- android:layout_width="50dp" -->
+<!-- android:layout_height="50dp" -->
+<!-- android:layout_centerVertical="true" -->
+<!-- android:layout_margin="10dp" -->
+<!-- android:layout_marginRight="15dp" -->
+<!-- android:src="@drawable/no_img_jst_yet" /> -->
+<!-- </RelativeLayout> -->
+<!-- <View -->
+<!-- android:id="@+id/textView1" -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="1px" -->
+<!-- android:layout_marginTop="10dp" -->
+<!-- android:layout_alignParentBottom="true" -->
+<!-- android:layout_toRightOf="@+id/ivFriendImage" -->
+<!-- android:background="@color/text_area_fg" /> -->
+
+
+<!-- </RelativeLayout> -->
+
+
+<!-- </LinearLayout> -->

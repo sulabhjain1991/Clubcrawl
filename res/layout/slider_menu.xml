@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lptpl="http://schemas.android.com/apk/res/com.linchpin.clubcrawl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginRight="0.0dip"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/background_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvupgrade_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/sltr_white_btn"
+            android:padding="6dp"
+            android:text="@string/upgrade_me"
+            android:textColor="@color/background_color"
+            android:textSize="@dimen/heading_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvupgrade_me"
+            android:layout_alignBottom="@+id/tvupgrade_me"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="24dp"
+            android:gravity="center"
+            android:text="@string/social"
+            android:textColor="@color/white"
+            android:textSize="@dimen/heading_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlSignout"
+        android:layout_below="@+id/header"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logo_round_icon_hover90x" />
+
+        <LinearLayout
+            android:id="@+id/UserProfile"
+            style="@style/LeftNevigationRow"
+            android:layout_alignParentTop="true" >
+
+            <View
+                android:id="@+id/vProfile"
+                android:layout_width="3dp"
+                android:layout_height="fill_parent"
+                android:background="@color/background_color" />
+
+            <com.linchpin.clubcrawl.helper.ImageViewRounded
+                android:id="@+id/ivProfileImage"
+                style="@style/LeftNevigationRowImage"
+                android:src="@drawable/no_img_jst_yet"
+                lptpl:enable_number="false" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                style="@style/LeftNevigationRowText"
+                android:layout_marginLeft="20dp"
+                android:text="Piyush"
+                android:textColor="#AAAAAA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rlFeeds"
+            style="@style/LeftNevigationRow"
+            android:layout_below="@+id/UserProfile" >
+
+            <View
+                android:id="@+id/vFeeds"
+                android:layout_width="3dp"
+                android:layout_height="fill_parent"
+                android:background="@color/background_color" />
+
+            <com.linchpin.clubcrawl.helper.ImageViewRounded
+                android:id="@+id/ivFeeds"
+                style="@style/LeftNevigationRowImage"
+                android:src="@drawable/feed_icon"
+                lptpl:enable_number="false" />
+
+            <TextView
+                android:id="@+id/tvFeeds"
+                style="@style/LeftNevigationRowText"
+                android:layout_marginLeft="20dp"
+                android:text="Personal feed"
+                android:textColor="#AAAAAA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rlNotification"
+            style="@style/LeftNevigationRow"
+            android:layout_below="@+id/rlFeeds" >
+
+            <View
+                android:id="@+id/vNotification"
+                android:layout_width="3dp"
+                android:layout_height="fill_parent"
+                android:background="@color/background_color" />
+
+            <com.linchpin.clubcrawl.helper.ImageViewRounded
+                android:id="@+id/ivNotification"
+                style="@style/LeftNevigationRowImage"
+                android:src="@drawable/notification_not_select" />
+
+            <TextView
+                android:id="@+id/tvNotification"
+                style="@style/LeftNevigationRowText"
+                android:layout_marginLeft="20dp"
+                android:text="@string/strNotification"
+                android:textColor="#AAAAAA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rlMessaging"
+            style="@style/LeftNevigationRow"
+            android:layout_below="@+id/rlNotification" >
+
+            <View
+                android:id="@+id/vMessaging"
+                android:layout_width="3dp"
+                android:layout_height="fill_parent"
+                android:background="@color/background_color" />
+
+            <com.linchpin.clubcrawl.helper.ImageViewRounded
+                android:id="@+id/ivMessaging"
+                style="@style/LeftNevigationRowImage"
+                android:src="@drawable/message_icon"
+                lptpl:enable_number="true" />
+
+            <TextView
+                android:id="@+id/tvMessaging"
+                style="@style/LeftNevigationRowText"
+                android:layout_marginLeft="20dp"
+                android:text="@string/strMessaging"
+                android:textColor="#AAAAAA" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rlSignout"
+        style="@style/LeftNevigationRow"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="1dp" >
+
+        <com.linchpin.clubcrawl.helper.ImageViewRounded
+            android:id="@+id/ivSignout"
+            style="@style/LeftNevigationRowImage"
+            android:layout_height="45dp"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/signout_icon"
+            lptpl:enable_number="false" />
+
+        <TextView
+            android:id="@+id/tvSignout"
+            style="@style/LeftNevigationRowText"
+            android:layout_marginLeft="20dp"
+            android:text="@string/strSignout"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</RelativeLayout>

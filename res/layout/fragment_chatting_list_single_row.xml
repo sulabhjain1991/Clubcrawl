@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/sender_pan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout
+            android:id="@+id/sender_pan_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+
+            <LinearLayout
+                android:id="@+id/llMsgSender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivuserImage"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvSenderMessages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/usermessages_textview"
+                    android:gravity="center"
+                    android:maxWidth="250dp"
+                    android:minWidth="60dp"
+                    android:padding="5dp"
+                    android:text="@string/userFriendMessage"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+                  <ImageView
+                    android:id="@+id/ivSenderImgMsg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:visibility="visible"
+                    />
+                
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvSenderDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sender_pan_rl"
+            android:layout_marginTop="10dp"
+            android:text="ssdszxczx"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/grayText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_pan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout
+            android:id="@+id/my_pan_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+
+            <LinearLayout
+                android:id="@+id/llMyMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true" >
+
+                <TextView
+                    android:id="@+id/tvMyMessages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/userfriendmessages_textview"
+                    android:gravity="center"
+                    android:maxWidth="250dp"
+                    android:minWidth="60dp"
+                    android:padding="5dp"
+                    android:text="@string/userFriendMessage"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/ivMyImgMsg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:visibility="visible"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/llMyMsg"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/llMyMsg"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/stillSending"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:background="@color/background_color" />
+
+                <View
+                    android:id="@+id/delivered"
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/background_color" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvMyDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/my_pan_rl"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:layout_marginRight="15dp"
+            android:text="ssdszxczx"
+            android:textColor="@color/grayText" />
+    </RelativeLayout>
+
+</RelativeLayout>

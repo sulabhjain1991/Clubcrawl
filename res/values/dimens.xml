@@ -1,0 +1,28 @@
+<resources>
+
+    <!--  -->
+    <dimen name="elarge_text">14sp</dimen>
+      <dimen name="sub_bar_height">35dp</dimen>
+    <dimen name="normal_text">12sp</dimen>
+    <dimen name="large_text">10sp</dimen>
+    <dimen name="text_area_padding">10dp</dimen>
+    <dimen name="header_height">55dp</dimen>
+    <!--  -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <integer name="num_cols">1</integer>
+
+    <dimen name="heading_size">14sp</dimen>
+    <dimen name="normal_size">12sp</dimen>
+    <dimen name="radius_notification">10dp</dimen>
+    
+    
+    <dimen name="banner_image">150dp</dimen>
+   <dimen name="text_area_fg_size">16dp</dimen>
+
+</resources>

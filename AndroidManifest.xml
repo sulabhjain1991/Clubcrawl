@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.linchpin.clubcrawl"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="in.globalsoft.carexonpainmgmt.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+	<uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="in.globalsoft.carexonpainmgmt.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+     <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.linchpin.clubcrawl.APP"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.linchpin.clubcrawl.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.linchpin.clubcrawl.LoginScreen"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait">        </activity>
+        <activity
+            android:name="com.linchpin.clubcrawl.LocationSelection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">        </activity>
+         <activity
+            android:name="com.linchpin.clubcrawl.BookingActivity"
+            android:label="@string/app_name" 
+           android:screenOrientation="portrait">
+        </activity>
+      
+        <activity
+            android:name="com.linchpin.clubcrawl.MainScreen"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize"
+             android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity
+            android:name="com.linchpin.clubcrawl.UpgradeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize"
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.linchpin.clubcrawl.ForgetPassword"
+             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.linchpin.clubcrawl.SignUp"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" 
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.linchpin.clubcrawl.ComposePostScreen"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize"
+           android:screenOrientation="portrait" />
+        <activity
+            android:name="com.linchpin.clubcrawl.EditProfileScreen"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.linchpin.clubcrawl.NearmeScreen"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden"
+          android:screenOrientation="portrait" >
+        </activity>
+       
+        <activity
+            android:name="com.linchpin.clubcrawl.BarMapScreen"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDafsZSD2kx1I-GPFhp7_KEG9p5w7C2NtI" />
+
+        <activity
+            android:name="com.linchpin.clubcrawl.DialogProfilePic"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/TransparentActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+    </application>
+
+</manifest>

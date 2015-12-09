@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ivEventImage"
+        android:layout_width="70dp"
+        android:layout_height="170dp"
+        android:layout_alignLeft="@+id/tvDescription"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/no_img_jst_yet" />
+
+    <LinearLayout
+        android:id="@+id/llbody"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivEventImage"
+        android:layout_marginTop="5dp"
+        android:background="#F4F4F4"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="The Jump Of Semifinals"
+            android:textColor="@android:color/black"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#E3E3E3" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="NightClub"
+                android:textColor="@color/background_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvPrices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="$8 Advance,$10 b4 10pm,$12 after"
+                android:textSize="12sp"
+                android:layout_marginRight="5dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llbody"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:text="UK&apos;s Biggest Hip Hop Battle Night: From Tweking to Rap battles and dance to singing "
+        android:textSize="10sp"
+         />
+
+    <RelativeLayout
+        android:id="@+id/rlFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_color" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Book Now"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

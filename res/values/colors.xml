@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  -->  
+
+    <color name="header_bg">#FFff2563</color>
+    <color name="header_fg">#FFFFFFFF</color>
+    <color name="list_bg_nor">@color/header_fg</color>
+    <color name="list_bg_selected">#FFF5F5F5</color>
+    <color name="list_fg_nor">#FF808080</color>
+    <color name="list_fg_selected">#FFff2563</color>
+    <color name="text_area_bg">#FFF0F0F0</color>
+    <color name="list_divider">#FFF0F0F0</color>
+    <color name="text_area_fg">#FF808080</color>
+    <!--  -->
+    <color name="background_color">#ff2563</color>
+    <color name="colorSignIn">#ff4379</color>
+    <color name="background_grey_Color">#ECEFF0</color>
+    <color name="separator_color">#ff9c9c9c</color>
+     <color name="left_panel_bg">#323641</color>
+     <color name="button_background">#f2f2f2</color>
+     <color name="white">#FFffffff</color>
+     <color name="black">#000000</color>
+      <color name="grayText">#808080</color>
+     <color name="transparent">#00000000</color>
+     <color name="edit_text_hint_color">#CBBFBF</color>
+     <color name="edit_text_text_color">#000000</color>
+     <color name="line_color">#F2F2F2</color>
+      <color name="blue_color">#007AFF</color>
+      <color name="default_border_color">#AAAAAA</color>
+     <color name="color_not_liked">#808080</color>
+   <color name="color_liked">#808080</color>
+    
+</resources>

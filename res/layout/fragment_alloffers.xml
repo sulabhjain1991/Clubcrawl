@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sub_bar_height"
+        android:orientation="horizontal"
+        android:id="@+id/llTabLayout"
+        android:weightSum="3" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/vGuestList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/background_color" />
+
+            <TextView
+                android:id="@+id/tvGuestList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:background="#ffffffff"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Offers "
+                android:textStyle="bold" >
+            </TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/vGuestlistsAndTables"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/background_color" />
+
+            <TextView
+                android:id="@+id/tvGuestlistsAndTables"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3dp"
+                android:background="#ffffffff"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Guest-list &amp; Tables "
+                android:textStyle="bold" >
+            </TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/vTickets"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/background_color" />
+
+            <TextView
+                android:id="@+id/tvTickets"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:background="#ffffffff"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Tickets"
+                android:textStyle="bold" >
+            </TextView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvOffers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/header_bg" >
+
+        <TextView
+            android:id="@+id/tvselectcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/strSelectCity"
+            android:textColor="@color/header_fg"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvdone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/text_area_padding"
+            android:text="@string/strDone"
+            android:textColor="@color/header_fg"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivCityImage"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_img" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_area_bg"
+        android:padding="@dimen/text_area_padding"
+        android:text="@string/MsgCityNotAvailable"
+        android:textColor="@color/text_area_fg" />
+
+    <ListView
+        android:id="@+id/lvcitylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/list_bg_nor"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:cacheColorHint="@null" >
+    </ListView>
+
+</LinearLayout>

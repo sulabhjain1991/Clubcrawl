@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item  
+        android:id="@+id/trend"  
+        android:title="@string/trend" 
+        android:icon="@drawable/trende"
+        />
+    <!--  <item  
+        android:id="@+id/friends"  
+        android:title="@string/friends" 
+        
+         android:icon="@drawable/friends_icon"
+        /> -->
+      <item  
+        android:id="@+id/inviteFriendsOut"  
+        android:title="@string/inviteFriendsOut" 
+        android:icon="@drawable/addevent_icon"
+        />
+      <item  
+        android:id="@+id/nightsout"  
+        android:title="@string/nightsOut" 
+        android:icon="@drawable/event_icon"
+        />
+       <item  
+        android:id="@+id/whosOut"  
+        android:title="@string/strWhosOut" 
+        android:icon="@drawable/whos_icon"
+        />
+    
+
+</menu>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header" >
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sub_bar_height"
+            android:background="@drawable/shp_mapsubbar_bg"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".6"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/vAll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/background_color" />
+
+                <TextView
+                    android:id="@+id/tvAll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="All "
+                    android:textStyle="bold" >
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".7"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/vOffers"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/background_color" />
+
+                <TextView
+                    android:id="@+id/tvOffers"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Offers "
+                    android:textStyle="bold" >
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/vGuestList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/background_color" />
+
+                <TextView
+                    android:id="@+id/tvGuestList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Guest list &amp; Tables"
+                    android:textStyle="bold" >
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".7"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/vTickets"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/background_color" />
+
+                <TextView
+                    android:id="@+id/tvTickets"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Tickets"
+                    android:textStyle="bold" >
+                </TextView>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:visibility="gone" >
+
+        <com.linchpin.clubcrawl.helper.ImageViewRounded
+            android:id="@+id/ivLogoClub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_img_jst_yet" />
+
+        <LinearLayout
+            android:id="@+id/pan_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+          
+            android:layout_toRightOf="@+id/ivLogoClub"
+             android:layout_toLeftOf="@+id/btnfollow"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvClubName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sfdfdfd"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/black_dot"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvClubAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/blue_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnfollow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/follow_btn_transparent"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:text="+Follow"
+            android:textSize="12sp"
+            android:textColor="@color/background_color"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircularImage">
+        <attr name="enable_border" format="boolean" />
+        <attr name="enable_number" format="boolean" />
+        <attr name="border_width" format="dimension" />
+        <attr name="numberRadius" format="dimension" />
+        <attr name="numberSize" format="dimension" />
+        <attr name="numberText" format="string" />
+        <attr name="numberColor" format="color" />
+        <attr name="numberBackgroundColor" format="color" />
+        <attr name="borderColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CharText">
+          <attr name="isAnimate" format="boolean" />
+    </declare-styleable>
+
+</resources>

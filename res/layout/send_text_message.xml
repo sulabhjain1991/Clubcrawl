@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/slidermenu_header" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        >
+        
+        <TextView 
+            android:id="@+id/tvTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To: "
+            android:textColor="#8E8E9A"
+            android:textSize="16dp"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:id="@+id/tvFriendName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abc"
+            android:textColor="#8E8E9A"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/tvTo"
+            />
+    </RelativeLayout>
+    
+    <EditText 
+        android:id="@+id/etMsgBox"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"/>
+    
+    <TextView 
+        android:id="@+id/tvSendMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

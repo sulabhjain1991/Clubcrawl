@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/direct_feed"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ivSocialTab"
+            android:contentDescription="@string/description"
+            android:src="@drawable/search_icon" />
+
+        <ImageView
+            android:id="@+id/ivSocialTab"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ivSearch"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@string/description"
+            android:src="@drawable/icon1" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvfeeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:cacheColorHint="@android:color/transparent"
+       />
+
+</LinearLayout>
